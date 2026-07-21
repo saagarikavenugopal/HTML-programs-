@@ -53,9 +53,12 @@
     <!-- HERO SECTION -->
     <section class="hero-section" id="hero">
       <h1><strong class="highlights">Hi I am Saagarika😊</strong></h1>
+      <br>
       <p class="tagline">I build websites and applications</p>
+      <br>
       <div class="hero-buttons">
        <a href="" class="btn btn-primary">View My Work</a>
+       <br>
       <br>
       <a href="" class="btn btn-secondary">Please do Hire me!!</a>
     </div>
@@ -157,7 +160,7 @@
             <span class="tag">React</span>
             <span class="tag">API</span>
           </div>
-          <a href="https://github.com/saagarikavenugopal" target="_blank">View Project</a>
+          <a href="https://github.com/saagarikavenugopal" target="_blank" class="btn">View Project</a>
           
           <iframe width="200" height="200" src="https://www.youtube.com/embed/X1zCAPLvMtw?si=ej4VM2ZnmSREMTFh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </article>
@@ -169,7 +172,7 @@
             <span class="tag">JavaScript</span>
             <span class="tag">UI</span>
           </div>
-          <a href="https://github.com/saagarikavenugopal" target="_blank">View Project</a>
+          <a href="https://github.com/saagarikavenugopal" target="_blank" class="btn">View Project</a>
           
           <iframe width="200" height="200" src="https://www.youtube.com/embed/DM_KJbit0mM?si=qKuxujyfOwr_7Dn_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </article>
@@ -181,7 +184,8 @@
             <span class="tag">Game</span>
             <span class="tag">JavaScript</span>
           </div>
-          <a href="https://github.com/saagarikavenugopal" target="_blank">View Project</a>
+          <a href="https://github.com/saagarikavenugopal" target="_blank"
+          class="btn">View Project</a>
           <iframe width="200" height="200" src="https://www.youtube.com/embed/IqpLQefIEHY?si=8C5nu6zw2JxXz7KT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </article>
         <article class="project-card" data-category="dashboard" data-year="2026">
@@ -192,7 +196,8 @@
             <span class="tag">API</span>
             <span class="tag">UI</span>
           </div>
-          <a href="https://github.com/saagarikavenugopal" target="_blank">View Project</a>
+          <a href="https://github.com/saagarikavenugopal" target="_blank"
+          class="btn">View Project</a>
           
           <iframe width="200" height="200" src="https://www.youtube.com/embed/MIYQR-Ybrn4?si=6wmSd9wbzojE9KcZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </article>
@@ -265,7 +270,7 @@
        <section id="contact" class="contact-section">
              <h2>Get In Touch</h2>
              <form id="contact-form" action="" method="POST">
-                <div class="form-goup">
+                <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
@@ -277,24 +282,24 @@
                 <br>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <br>
+                    
                     <textarea name="message" id="message" rows="5" required></textarea>
                 </div>
                 <br>
-                <button type="submit">Send Message</button>
+                <button id="send-message" type="submit">Send Message</button>
              </form>
             </section>
       <!--FILE UPLOAD -->
       <br>
-      <label for="">Upload resume</label>
+      <label for="" class="resume">Upload resume:</label>
         <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required />
         <br>
         <!--DATE PICKER-->
-        <label for="date">Preferred date:</label>
+        <label for="date" class="preferred-date">Preferred date:</label>
         <input type="date" id="date" name="date">
 
       <br />
-      <button type="submit">Send Message</button>
+      <button id="send-message" type="submit">Send Message</button>
     </form>
    <!-- FOOTER -->
              <footer class="site-footer">

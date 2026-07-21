@@ -167,10 +167,173 @@ text-align:center;
       }
       .project-card a{
       color: rgb(111, 21, 111)
-        ;
-        
+        ; 
       }
-     
+      /* DAY 7 */
+      .btn{
+        padding: 12px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        border: 2px  solid transparent ;
+        cursor: pointer;
+      }
+      .btn-primary{
+        background-color:lightcoral;
+      }
+      .btn-primary:hover{
+        background: transparent ;
+        border-color: #fff9d6;
+      }
+       .btn-secondary{
+        background-color:lightcoral;
+      }
+      .btn-secondary:hover{
+        background: transparent ;
+        border-color: #fff9d6;
+      }
+      .tagline{
+        padding-bottom: 20px;
+        animation: fadeInUp 0.8s ease 0.4s both;
+      }
+      section{
+        padding: 10px;
+      }
+      section h2{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom:10px;
+
+      }
+     /* Animations */
+     @keyframes fadeInUp{
+      from{
+        opacity: 0;
+        transform:translateY(30px) ;
+      }
+      to{
+        opacity: 1;
+        transform: translateY(0);
+      }
+     }
+     .highlights{
+      animation: fadeInUp 3s ease 0.2s both ;
+     }
+     .tagline{
+      animation:fadeInUp 4s ease 0.2s both ;
+     }
+     .hero-buttons{
+       animation:fadeInUp 6s ease 0.2s both ;
+       
+      }
+      .hero-buttons{
+        padding: 15px;
+        border: none;
+        animation: pulse 3s infinite;
+      }
+      @keyframes pulse{
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+      }
+     /* contact form */
+     .contact-section{
+      background: url(./background-9509852_1280.jpg);
+      
+     }
+     #contact-form{
+      width: 20px;
+      margin: 0;
+     }
+     .form-group{
+      margin: bottom 24px;
+     }
+     .form-group label{
+        display: block;
+        font-weight: bold;
+        margin-bottom:5;
+        color: orangered;
+     }
+     .form-group input,
+     .form-group textarea{
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid darkorange;
+      border-radius: 8px;
+      
+     }
+     .form-group input:focus,
+     .form-group textarea:focus{
+      outline: none;
+      border-color: aquamarine;
+      box-shadow:0 0 30px red;
+     }
+     .resume,
+     .preferred-date{
+      background-color: #EEAECA;
+     }
+     /* footer */
+     .site-footer{
+      background-color: bisque;
+      padding:60px 2px;
+      text-align: center;
+      border-radius: 10px;
+
+     }
+     #send-message{
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+      background-color:lightcoral;
+      color: #fff9d6;
+     }
+     .about-section{
+      text-align: center;
+     }
+     .profile-figure{
+      color: lightsalmon;
+     }
+     .menu-toggle{
+      display:none;
+      background: none;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+     }
+     @media(max-width:768px){
+      .menu-toggle {
+        display: block;
+     }
+     .nav-links{
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      gap: 20px;
+      flex-direction: column;
+
+     }
+     .nav-links.open{
+      display: flex;
+     }
+     }
+     /* Resposive */
+     @media(max-width:768px){
+      .nav-links {display:none;}
+      .menu-toggle{display:block;}
+      .hero-section h1{font-size:20px;}
+      .projects-grid{grid-template-columns:1fr;}
+     }
+
       
 
 
