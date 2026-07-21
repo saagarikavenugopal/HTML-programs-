@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    @media(min-width: 768px){
+        .navbar{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .gallery{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    </style>
+</head>
+<body>
+     <nav class="navbar">
+    <div class="logo">My logo</div>
+    <div class="menu-links">Home | About | Contact</div>
+    <div class="button">Login</div>
+
+   </nav>
+   <div class="gallery">
+     <div class="card">Project 1</div>
+     <div class="card">Project 2</div>
+     <div class="card">Project 3</div>
+     <div class="card">project 4</div>
+   </div> 
+</body>
+</html>
