@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day9</title>
+</head>
+<body>
+  <div class="card">
+    <h2>project title</h2>
+    <h3>title</h3>
+    <p>project description</p>
+  </div>  
+  <ul class="nav-links">
+    <li><a href="">home</a></li>
+    <li><a href="">about</a></li>
+    <li><a href="">contact</a></li>
+  </ul>
+
+  <script>
+    const card = document.querySelector(".card");
+    console.log(card.parentElement);
+    console.log(card.children);
+    console.log(card.firstElementChild);
+    console.log(card.lastElementChild);
+
+    const nav = document.querySelectorAll(".nav-links a");
+    console.log(nav.length);
+  </script>
+</body>
+</html>

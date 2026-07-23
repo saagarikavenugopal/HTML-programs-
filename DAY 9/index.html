@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day9</title>
+</head>
+<body>
+    <h1 id="title">Welcome to JS</h1>
+    <p class="info">HTML is awesome</p>
+    <p class="info">CSS makes it beautiful</p>
+    <button>Click Me</button>
+    <input type="email">
+ 
+    <script>
+        const heading = document.getElementById("title");
+        console.log(heading.textContent);
+        const para = document.getElementsByClassName("info");
+        console.log(para);
+        const first = document.querySelector(".info");
+        console.log(first.textContent);
+        const all = document.querySelectorAll(".info");
+        console.log(all);
+        console.log(all[1].textContent);
+        const button = document.querySelector("button");
+        console.log(button.textContent);
+        const email = document.querySelector('input[type="email"]');
+        const p = document.getElementsByTagName("p");
+    </script>
+</body>
+</html>
