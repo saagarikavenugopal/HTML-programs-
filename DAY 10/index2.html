@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #alertBox{
+            display: none;
+            padding: 20px;
+            width: 200px;
+            height: 20px;
+            background-color: chocolate;
+            color: white;
+            margin-left: 350px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <div id="alertBox">
+        Button Clicked!
+    </div>
+    <script>
+        const button = document.getElementById("btn");
+        const alert_box = document.getElementById("alertBox");
+        button.addEventListener("click", function(){
+            alert_box.style.display = "block";
+        })
+    </script>
+</body>
+</html>

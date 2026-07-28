@@ -25,6 +25,7 @@ body {
         list-style: none;
         gap: 30px;
         flex-wrap: wrap;
+        background-color:#EEAECA;
       }
       li a{
         text-decoration:none;
@@ -299,33 +300,41 @@ text-align:center;
      .profile-figure{
       color: lightsalmon;
      }
-     .menu-toggle{
+      .menu-toggle{
       display:none;
       background: none;
       border: none;
       font-size: 30px;
       cursor: pointer;
-     }
-     @media(max-width:768px){
+      }
+      @media(max-width:768px){
       .menu-toggle {
         display: block;
-     }
-     .nav-links{
+      }
+        /* Make the mobile menu participate in document flow so it pushes content down
+          instead of overlaying/covering the page */
+      .nav-links{
       display: none;
-      position: absolute;
-      top: 70px;
-      left: 0;
+      position: static;
       width: 100%;
       text-align: center;
-      padding: 20px;
+      padding: 10px 0;
       gap: 20px;
       flex-direction: column;
-
-     }
-     .nav-links.open{
+      }
+      .nav-links.open{
       display: flex;
-     }
-     }
+      }
+        /* On small screens place the toggles before the menu so
+          the menu opens below the moon and hamburger buttons */
+        .navbar .logo{ order: 1; }
+        .navbar .theme-toggle{ order: 2; }
+        .navbar .menu-toggle{ order: 3; }
+        .navbar .nav-links{ order: 4; }
+
+        /* small visual spacing when menu is open */
+        .nav-links.open{ margin-top: 6px; }
+        }
      /* Resposive */
      @media(max-width:768px){
       .nav-links {display:none;}

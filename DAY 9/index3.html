@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day9</title>
+    <title>Document</title>
+    <style>
+        .active{
+            background-color: black;
+            color: azure;
+        }
+    </style>
+   
 </head>
 <body>
-    <h1>Welcome</h1>
-    
+    <h1 id="change" class="active">welcome <span>Students</span></h1>
+    <h2 data-level="beginner"></h2>
+    <button onclick="changeText()">Change heading</button>
+    <a href="https://www.google.com/">VISIT GOOGLE</a>
+    <img src="../Day 3/github.png" alt="github image">
+ 
+    <script>
+        const result = document.querySelector("h1");
+        console.log(result.textContent);// content
+        console.log(result.innerHTML);// hidden tags with content
+        console.log(result.className); //no
+        console.log(result.id); //no
+        const value = document.querySelector("h2");
+        console.log(value.getAttribute("data-level"));
+ 
+        function changeText(){
+            document.getElementById("change").innerHTML= "Im a <span> changed span </span> content";
+            //document.getElementById("change").style.backgroundColor= "red";
+            document.querySelector("h1").classList.toggle("active");
+ 
+        }
+         
+ 
+        const link = document.querySelector("a");
+        link.href = "https://github.com/";
+        link.target= "_blank";
+        link.textContent = "Visit GitHub";
+        const image = document.querySelector("img");
+        image.src = "cat.png";
+        image.alt= "cat image";
+    </script>
 </body>
 </html>
+ 
+ 
+ 
+ 
+ 
+ 
