@@ -1,0 +1,83 @@
+.skills__pills {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.skill-pill {
+  padding: 16px 32px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: box-shadow 0.25s ease;
+}
+
+.skill-pill:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.skills__table-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 8px;
+  overflow-x: auto;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.skills-table caption {
+  text-align: left;
+  padding: 14px 16px 6px;
+  font-weight: 600;
+  color: var(--color-text-soft);
+  font-size: 0.9rem;
+}
+
+.skills-table th,
+.skills-table td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+}
+
+.skills-table th {
+  font-family: var(--font-display);
+  color: var(--color-text-faint);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.skills-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.level-badge--intermediate {
+  background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+  color: var(--color-primary);
+}
+
+.level-badge--beginner {
+  background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  color: var(--color-accent);
+}
