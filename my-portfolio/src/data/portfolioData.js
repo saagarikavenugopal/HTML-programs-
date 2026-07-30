@@ -25,7 +25,7 @@ export const navLinks = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export const skillPills = ['HTML', 'CSS', 'JS', 'React'];
+export const skillPills = ['HTML', 'CSS', 'JS', 'React', 'C++', 'C', 'Python'];
 
 export const skillsTable = [
   { tech: 'HTML5', proficiency: 'Intermediate', years: 3 },

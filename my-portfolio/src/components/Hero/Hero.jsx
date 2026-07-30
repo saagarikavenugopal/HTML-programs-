@@ -14,7 +14,7 @@ function Hero() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
           <h1 className="hero__title">
-            {personalInfo.greeting} <span className="gradient-text">{personalInfo.emoji}</span>
+            {personalInfo.greeting} <span className="hero__emoji">{personalInfo.emoji}</span>
           </h1>
           <p className="hero__tagline">{personalInfo.tagline}</p>
 

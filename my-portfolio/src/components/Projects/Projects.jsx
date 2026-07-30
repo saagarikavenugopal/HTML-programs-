@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiGithub } from 'react-icons/fi';
 import { projects } from '../../data/portfolioData';
+import ImageWithFallback from '../ImageWithFallback/ImageWithFallback';
 import './Projects.css';
 
 function Projects() {
@@ -24,9 +25,14 @@ function Projects() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
             >
-              {/* Drop your real screenshot into src/assets/ and replace this placeholder with an <img> */}
+              {/* Drop a file matching project.image (see src/data/portfolioData.js) into public/assets/ */}
               <div className="project-card__image">
-                <span>{project.title}</span>
+                <ImageWithFallback
+                  fileName={project.image}
+                  alt={`Screenshot of ${project.title}`}
+                  className="project-card__photo"
+                  fallback={<span className="project-card__image-label">{project.title}</span>}
+                />
               </div>
 
               <div className="project-card__body">

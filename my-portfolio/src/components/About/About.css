@@ -34,6 +34,13 @@
   color: var(--color-primary);
 }
 
+.about__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .about__figure figcaption {
   color: var(--color-text-faint);
   font-size: 0.85rem;

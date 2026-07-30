@@ -50,7 +50,7 @@ function Navbar() {
                 transition={{ duration: 0.25 }}
                 style={{ display: 'inline-flex' }}
               >
-                {theme === 'light' ? '🌙' : '☀️'}
+                {theme === 'light' ? '☀️' : '🌙'}
               </motion.span>
             </AnimatePresence>
           </button>

@@ -34,6 +34,10 @@
   margin-bottom: 18px;
 }
 
+.hero__emoji {
+  font-size: 0.85em;
+}
+
 .hero__tagline {
   color: var(--color-text-soft);
   font-size: 1.15rem;

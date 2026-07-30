@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../../data/portfolioData';
+import ImageWithFallback from '../ImageWithFallback/ImageWithFallback';
 import './About.css';
 
 function About() {
@@ -21,9 +22,14 @@ function About() {
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Drop your real headshot into src/assets/profile.jpg and swap the src below */}
+            {/* Drop a file named profile.jpg (or .png) into public/assets/ — it will appear automatically */}
             <div className="about__photo-frame">
-              <div className="about__photo-placeholder">SV</div>
+              <ImageWithFallback
+                fileName="profile.jpg"
+                alt="Profile Photo"
+                className="about__photo"
+                fallback={<div className="about__photo-placeholder">SV</div>}
+              />
             </div>
             <figcaption>My Profile Photo</figcaption>
           </motion.figure>

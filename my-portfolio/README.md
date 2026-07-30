@@ -20,17 +20,21 @@ npm run preview
 
 ## Adding your real images
 
-Your original file referenced local screenshots (e.g. `calci photo.png`, `mario img.png`) that weren't available to rebuild with, so the Hero/About/Projects sections currently use styled placeholders instead.
+Images just work — no code editing needed. Drop your files into **`public/assets/`** with these exact names, then refresh the page:
 
-To use your real images:
-1. Drop your files into `src/assets/` — suggested names: `profile.jpg`, `rentsync.png`, `calculator.png`, `mario.png`, `weather.png`.
-2. In `About.jsx`, replace the `.about__photo-placeholder` div with:
-   ```jsx
-   import profilePhoto from '../../assets/profile.jpg';
-   // ...
-   <img src={profilePhoto} alt="Profile Photo" />
-   ```
-3. In `Projects.jsx`, do the same for each project's `.project-card__image` div, or update the `image` field in `src/data/portfolioData.js` and import the files at the top of `Projects.jsx`.
+| Section | Expected filename |
+|---|---|
+| About (profile photo) | `profile.jpg` (or rename the file and update `fileName` in `About.jsx`) |
+| RENTSYNC | `rentsync.png` |
+| Calculator | `calculator.png` |
+| Mario Game | `mario.png` |
+| Weather App | `weather.png` |
+
+These names come from `src/data/portfolioData.js` (the `image` field on each project) and the `fileName` prop passed to `<ImageWithFallback>` in `About.jsx`. If a file isn't there yet, that spot just shows a styled placeholder instead of a broken image — so it's safe to add them one at a time.
+
+To use different filenames, either rename your files to match the table above, or edit the `image` values in `portfolioData.js` / the `fileName` prop in `About.jsx`.
+
+**Important**: files must go in `public/assets/`, not `src/assets/` — anything in `public/` is served as-is at the site root (so `public/assets/profile.jpg` becomes `/assets/profile.jpg` in the browser), while `src/` files need to be explicitly imported into JavaScript to be bundled.
 
 ## What changed from your original file, and why
 
@@ -76,4 +80,4 @@ src/
 ## Notes
 
 - The contact form currently **simulates** sending (shows "Sending..." then "Message Sent"). To actually deliver messages, wire it up to a backend endpoint or a service like Formspree or EmailJS — happy to help with that next.
-- Dark mode is toggled with the 🌑/☀️ button in the navbar and persists across refreshes via `localStorage`.
+- Dark mode is toggled with the ☀️/🌙 button in the navbar and persists across refreshes via `localStorage`.

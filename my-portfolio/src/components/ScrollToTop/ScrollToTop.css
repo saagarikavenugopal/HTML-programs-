@@ -11,6 +11,6 @@
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  box-shadow: 0 8px 22px rgba(5, 150, 105, 0.35);
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--color-primary) 35%, transparent);
   z-index: 900;
 }
